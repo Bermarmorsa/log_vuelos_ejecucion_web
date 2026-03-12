@@ -34,8 +34,7 @@ def df_meteo_open(start_date, end_date, longitude, latitude):
 		"longitude": longitude,
 		"hourly": ["temperature_2m", "dew_point_2m", "wind_speed_10m", "wind_direction_10m", "wind_speed_80m", "wind_direction_80m", "temperature_80m", "temperature_120m", "visibility", "cloud_cover", "surface_pressure", "precipitation"],
 		"start_date": start_date,
-		"end_date": end_date,
-		"timezone": "auto"
+		"end_date": end_date
 	}
 	responses = openmeteo.weather_api(url, params=params)
 
@@ -135,4 +134,5 @@ print(archivo.head())
 
 
 #mejora. Leer el archivo parquet sacar la fecha mayor y si falta algún periodo añadirlo, pero si no no hacer nada, que sea incremental.
+
 
