@@ -122,14 +122,14 @@ def comprobar_archivo(start_date, end_date, lon, lat):
 
 
 
-
+'''
 lon = -3.093183
 lat = 40.820730
 
 
 archivo = comprobar_archivo('2024-11-01', '2026-01-11', lon, lat)
 print(archivo.head())
-
+'''
 
 
 
